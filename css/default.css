@@ -1,0 +1,43 @@
+
+body{
+    width: 100%;
+    min-width: 980px;
+}
+
+h2{
+   font-weight: bold;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+legend{
+     font-weight: bold;
+}
+
+/*Classes*/
+.texto{
+    width: 20%;
+    text-align: right;
+}
+
+.elemento{
+    width: 60%;
+}
+
+.alert{
+    width: 98%;
+    border: 2px solid;
+    padding: 10px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: red;
+}
+
+.table_min{
+    float: left; 
+    width: 70%;
+}
+
+.table_max{
+    width: 100%;
+}
