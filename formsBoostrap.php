@@ -26,48 +26,52 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
                 <form method="post" action="formsBoostrap.php">
 
                     <!-- Control matricula -->
-                    <label for="matricula" class="form-label">Matricula:</label>
-                    <input type="number" class="form-control" id="matricula" 
-                           placeholder="Insira sua matricula" name="matricula">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="text" class="form-control" id="email" 
+                           placeholder="Insira seu email" name="email">
                     <!-- Control nome -->
                     <label for="nome" class="form-label">Nome:</label>
                     <input type="text" class="form-control" id="nome" 
                            placeholder="Insira seu nome" name="nome">
-                    <!-- Control turmas -->
-                    <label for="divTurmas" class="form-label">Turmas:</label>
-                    <div id="divTurmas" class="form-check">
-                        <div class="row">
-                            <div class="col col-lg-2">
-                                <input type="radio" class="form-check-input" id="turma"
-                                       name="turma" value="411" checked>411
-                            </div>
-                            <div class="col col-lg-2">
-                                <input type="radio" class="form-check-input" id="turma"
-                                       name="turma" value="421">421
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col col-lg-2">
-                                <input type="radio" class="form-check-input" id="turma"
-                                       name="turma" value="431">431
-                            </div>
-                            <div class="col col-lg-2">
-                                <input type="radio" class="form-check-input" id="turma"
-                                       name="turma" value="423">423
-                            </div>
-                        </div>
-                    </div>
                     <!-- Control telefone -->
                     <label for="telefone" class="form-label">Telefone:</label>
                     <input type="text" class="form-control" id="telefone" 
                            placeholder="Insira seu telefone" name="telefone">
-                    <!-- Control estado -->
-                    <label for="estado" class="form-label">Estado:</label>
-                    <select id="estado" name="estado" class="form-select">
-                        <option value="RS">RS</option>
-                        <option value="SC">SC</option>
-                        <option value="SP">SP</option>
-                        <option value="ES">ES</option>
+                    <label for="endereco" class="form-label">Endereço:</label>
+                    <input type="text" class="form-control" id="endereco" 
+                           placeholder="Insira seu endereco" name="endereco">
+                    <input type="text" class="form-control" id="quantidade" 
+                           placeholder="Insira a quantidade desejada" name="quantidade">
+                    <label for="divTipos" class="form-label">Tipo:</label>
+                    <div id="divtipos" class="form-check">
+                        <div class="row">
+                            <div class="col col-lg-2">
+                                <input type="radio" class="form-check-input" id="tipo"
+                                       name="tipo" value="vermelho" checked>tipo1
+                            </div>
+                            <div class="col col-lg-2">
+                                <input type="radio" class="form-check-input" id="tipo"
+                                       name="tipo" value="azul" checked>tipo2
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-lg-2">
+                                <input type="radio" class="form-check-input" id="tipo"
+                                       name="tipo" value="lilas" checked>tipo3
+                            </div>
+                            <div class="col col-lg-2">
+                                <input type="radio" class="form-check-input" id="tipo"
+                                       name="tipo" value="amarelo" checked>tipo4
+                            </div>
+                        </div>
+                    </div>
+
+                    <label for="cor" class="form-label">Cor:</label>
+                    <select id="cor" name="cor" class="form-select">
+                        <option value="vermelho">vermelho</option>
+                        <option value="azul">azul</option>
+                        <option value="lilas">lilas</option>
+                        <option value="amarelo">amarelo</option>
                     </select>
                     <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
                         <div class="col col-lg-12">

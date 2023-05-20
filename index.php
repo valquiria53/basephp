@@ -12,22 +12,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
     </head>
     <body>
         <div>
-            <h2>SISTEMA DE ENSINO</h2>
+            <h2>LOJINHA DAS FLORES DA VALVAL</h2>
         </div>
         <form method="get" action="index.php">
             <fieldset>
-                <legend>Cadastro de alunos</legend>
+                <legend>Cadastro de pedido de flores</legend>
                 <table class="table_min" border="1">
-                    <tr>
-                        <td class="texto">
-                            Matricula
-                        </td>
-                        <td>
-                            <!-- int matricula = 10 -->
-                            <input type="number" id="matricula" name="matricula" placeholder="Insira a matricula">
-                        </td>
-                       
-                    </tr>
                     <tr>
                         <td class="texto">
                             Nome
@@ -39,18 +29,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                     </tr>
                     <tr>
                         <td class="texto">
-                            Turmas
+                            Email
                         </td>
                         <td>
-                            <input type="radio" id="turma" name="turma" value="411">411
-                            <input type="radio" id="turma" name="turma" value="412">412
-                            <input type="radio" id="turma" name="turma" value="412">413
-                            <input type="radio" id="turma" name="turma" value="421">421<br>
-                            <input type="radio" id="turma" name="turma" value="422">422
-                            <input type="radio" id="turma" name="turma" value="431">431
-                            <input type="radio" id="turma" name="turma" value="432">432
-                            <input type="radio" id="turma" name="turma" value="433">433
+                            <!-- int email = 10 -->
+                            <input type="text" id="email" name="email" placeholder="Insira seu email">
                         </td>
+                       
                     </tr>
                     <tr>
                         <td class="texto">
@@ -71,14 +56,36 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                     </tr>
                     <tr>
                         <td class="texto">
-                            Estado
+                            Quantidade de flores
                         </td>
                         <td>
-                            <select id="estado" name="estado">
-                                <option value="">Selecione um estado</option>
-                                <option value="RS">RS</option>
-                                <option value="SC">SC</option>
-                                <option value="PR">PR</option>
+                            <input type="number" id="quantidade" name="quantidade"
+                                   placeholder="Informe quantidade de flores desejada">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="texto">
+                            Tipos de flores
+                        </td>
+                        <td>
+                            <input type="radio" id="tipo" name="tipo" value="tipo1">tipo1
+                            <input type="radio" id="tipo" name="tipo" value="tipo2">tipo2<br>
+                            <input type="radio" id="tipo" name="tipo" value="tipo3">tipo3
+                            <input type="radio" id="tipo" name="tipo" value="tipo4">tipo4
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="texto">
+                            Cor
+                        </td>
+                        <td>
+                            <select id="cor" name="cor">
+                                <option value="">Selecione uma cor</option>
+                                <option value="vermelho">vermelho</option>
+                                <option value="azul">azul</option>
+                                <option value="lilas">lilas</option>
+                                <option value="lilas">amarelo</option>
                             </select>
                         </td>
                     </tr>
@@ -90,7 +97,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                         </td>
                     </tr>
                 </table>
-                <img style="float: left; width: 30%; min-width: 150px; padding-top: 15px;" src="img/UNI.png" alt=""/>
+                <img style="float: left; width: 20%; min-width: 150px; padding-top: 15px;" src="img/fofo.jpg" alt=""/>
+                
             </fieldset>
             <?php
             //Se o que vier do formulário vier por meio de um get...faça isso.
@@ -98,14 +106,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                 
                 //printf("%s",$_GET);
                 //print_r($_GET);
-                @$matricula = $_GET['matricula'];
+                @$email = $_GET['email'];
                 @$nome = $_GET['nome'];
-                @$turma = $_GET['turma'];
                 @$fone = $_GET['fone'];
                 @$endereco = $_GET['endereco'];
-                @$estado = $_GET['estado'];
+                @$quantidade = $_GET['quantidade'];
+                @$tipo = $_GET['tipo'];
+                @$cor = $_GET['cor'];
                 
-                if (empty($matricula)||empty($nome) || empty($endereco)|| empty($turma) || empty($estado) || empty($fone)) {
+                if (empty($email)||empty($nome) || empty($endereco) || empty($quantidade) || empty($tipo) || empty($cor) || empty($fone)) {
                     echo('<div class="alert">Todos os campos do formulário são obrigatórios.</div>');
                 }else{
                     echo('<fieldset>');

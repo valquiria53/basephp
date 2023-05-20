@@ -2,15 +2,6 @@
 echo('<table>
                     <tr>
                         <td class="texto">
-                            Matricula
-                        </td>
-                        <td>
-                           '.$matricula.'
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="texto">
                             Nome
                         </td>
                         <td>
@@ -20,10 +11,10 @@ echo('<table>
                     </tr>
                     <tr>
                         <td class="texto">
-                            Turmas
+                            email
                         </td>
                         <td>
-                            '.$turma.'
+                           '.$email.'
                         </td>
                         <td></td>
                     </tr>
@@ -47,10 +38,28 @@ echo('<table>
                     </tr>
                     <tr>
                         <td class="texto">
-                            Estado
+                            Quantidade
                         </td>
                         <td>
-                            '.$estado.'
+                           '.$quantidade.'
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="texto">
+                            Tipo
+                        </td>
+                        <td>
+                            '.$tipo.'
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="texto">
+                            Cor
+                        </td>
+                        <td>
+                            '.$cor.'
                         </td>
                         <td></td>
                     </tr>
